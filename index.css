@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+}
+.left {
+    background-image: url("images/image-product-desktop.jpg");
+    width: 1000px;
+    background-size: cover;
+}
+
+.card{
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    width: 600px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.paragraph p{
+    margin-bottom: 2rem;
+}
+.price p{
+    margin-top: 0.7rem;
+    margin-left: 1.5rem;
+    text-decoration: line-through;
+}
+p{
+    font-size: 14px;
+    color: grey;
+}
+.price h1{
+    color: hsl(158, 36%, 37%);
+}
+h2{
+    color: hsl(228, 12%, 48%);
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+h1{
+    font-family: "Fraunces", serif;
+    margin-bottom: 1rem;
+}
+.right{
+   padding: 2rem;
+}
+
+.price{
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+a{
+    background-color: hsl(158, 36%, 37%);
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+}
+a:hover{
+    background-color: hsl(158, 42%, 18%);
+}
+.icon{
+    width: 16px;
+    height: 16px;
+    margin-right: 0.5rem;
+    vertical-align: text-top;
+}
+@media (max-width:600px){
+    body{
+        margin: 1rem;
+        
+    }
+    .card{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .left{
+        background-image: url(images/image-product-mobile.jpg);
+        width: 100%;
+        background-size:cover;
+        background-repeat: no-repeat;
+        height: 300px;
+        
+    }
+}
+@media (max-width:325px){
+    a{
+        padding: 1rem;
+        margin-left: 1rem;
+    }
+}
